@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link preview</title>
+    <script defer src="index.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <h1 class="text-4xl font-semibold text-white text-center p-8">Link Previewer</h1>
+    <form class="flex justify-center pb-8">
+        <input class="w-1/2 p-4 h-10 bg-yellow-300 rounded-lg text-yellow-800 font-medium focus:outline-none border-2 border-red-500 border-opacity-0 focus:border-opacity-100" type="text" name="textBox" id="textBox">
+        <button class="bg-red-300 px-4 ml-4 rounded-lg text-red-800 font-medium focus:outline-none border-2 border-red-500 border-opacity-0 focus:border-opacity-100" type="submit" id="button">send</button>
+    </form>
+    <div class="wrapper flex justify-center text-white ">
+        <div class="card bg-purple-500 p-8 rounded-xl mx-auto w-2/3 flex space-x-8" id="card">
+            <div class="max-w-xs max-h-80 ">
+                <img  id="cardImg" class="hidden object-contain">
+            </div>    
+            <div class="flex flex-col space-y-4">
+                <h4 id="cardTitle" class="font-bold text-2xl"></h4>
+                <p class="cardDesc font-medium text-lg text-justify" id="cardDesc"></p>
+                <a href="#" class="bg-purple-900 rounded-md text-center px-2 py-1 min-w-min mx-auto" target="_blank" id="cardUrl"></a>
+                <ul id="cardKeyword" class="flex flex-wrap gap-2 font-medium"></ul>
+            </div>            
+        </div>
+    </div>
+</body>
+</html>
